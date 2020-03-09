@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">HelpingOut</string>
+    <string name="services">Services</string>
+    <string name="loading">Loading</string>
+    <string name="addiction">Addiction</string>
+    <string name="accommodation">Accommodation</string>
+    <string name="health">Health</string>
+    <string name="legal">Legal</string>
+    <string name="women">Women</string>
+    <string name="employment">Employment</string>
+    <string name="education">Education</string>
+    <string name="food">Food</string>
+    <string name="clothing">Clothing</string>
+    <string name="phone">Phone</string>
+    <string name="counseling">Counseling</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="public_holiday">Public Holiday</string>
+    <string name="thursday">Thursday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="monday">Monday</string>
+    <string name="helpful_numbers">Helpful Numbers</string>
+
+    <string name="about">DISCLAIMER\n\nThis is an unofficial app version of \"Helping Out guide\" available on City of Melbourne website. This app is not endorsed by City Of Melbourne. \n\nI have developed this app voluntarily for the following purpose: \n- Bring this guide to wider audience\n- Let people know about free or low-cost services available in Melbourne and surrounding suburbs to help them in the time of need\n- Make it easy to navigate the guide\n- Allow users to search and filter places based on service type\n- Visualize location of places on the map\n\n\n The code of this app is open-source and available on Github under MIT License\n\n\nFeel free to modify it or send me suggestions to improve it\n\nCheers,\nUmair</string>
+    <string name="download_guide">The official guide can be downloaded in pdf or doc format from City Of Melbourne</string>
+    <string name="link">https://www.melbourne.vic.gov.au/community/health-support-services/social-support/pages/helping-out.aspx</string>
+</resources>

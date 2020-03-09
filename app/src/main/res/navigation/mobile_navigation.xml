@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/categoryListFragment">
+
+    <fragment
+        android:id="@+id/serviceListFragment"
+        android:name="com.umair.helpingout.ui.services.ServiceListFragment"
+        android:label="{title}"
+        tools:layout="@layout/service_list_fragment" >
+        <argument
+            android:name="categoryId"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="color"
+            app:argType="string" />
+        <action
+            android:id="@+id/actionServiceDetail"
+            app:destination="@id/serviceDetailFragment"
+            app:enterAnim="@anim/right_left"
+            app:exitAnim="@anim/left_right"
+            app:popExitAnim="@anim/left_right"
+            app:popEnterAnim="@anim/right_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.umair.helpingout.ui.explore.ExploreFragment"
+        android:label="Explore"
+        tools:layout="@layout/explore_fragment" >
+        <action
+            android:id="@+id/actionServiceDetail"
+            app:destination="@id/serviceDetailFragment"
+            app:enterAnim="@anim/right_left"
+            app:exitAnim="@anim/left_right"
+            app:popExitAnim="@anim/left_right"
+            app:popEnterAnim="@anim/right_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.umair.helpingout.ui.about.AboutFragment"
+        android:label="About this app"
+        tools:layout="@layout/about_fragment" />
+    <fragment
+        android:id="@+id/categoryListFragment"
+        android:name="com.umair.helpingout.ui.categories.CategoryListFragment"
+        android:label="Helping Out - Melbourne"
+        tools:layout="@layout/category_list_fragment" >
+        <action
+            android:id="@+id/actionPlaceList"
+            app:destination="@id/serviceListFragment"
+            app:enterAnim="@anim/top_bottom"
+            app:exitAnim="@anim/bottom_top"
+            app:popExitAnim="@anim/bottom_top"
+            app:popEnterAnim="@anim/top_bottom"
+            app:launchSingleTop="false"
+            />
+        <action
+            android:id="@+id/actionHelpfulNumbersFragment"
+            app:destination="@id/helpfulNumbersFragment"
+            app:enterAnim="@anim/top_bottom"
+            app:exitAnim="@anim/bottom_top"
+            app:popExitAnim="@anim/bottom_top"
+            app:popEnterAnim="@anim/top_bottom"
+            app:launchSingleTop="false"/>
+        <action
+            android:id="@+id/actionAboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/serviceDetailFragment"
+        android:name="com.umair.helpingout.ui.detail.ServiceDetailFragment"
+        android:label="service_detail_fragment"
+        tools:layout="@layout/service_detail_fragment">
+        <argument
+            android:name="placeId"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpfulNumbersFragment"
+        android:name="com.umair.helpingout.ui.numbers.HelpfulNumbersFragment"
+        android:label="{title}"
+        tools:layout="@layout/helpful_numbers_fragment" >
+        <argument android:name="color"
+            app:argType="string" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+</navigation>

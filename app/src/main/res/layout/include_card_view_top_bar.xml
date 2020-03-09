@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_margin="5dp"
+        android:id="@+id/cardTop">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHours"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:elevation="@dimen/cardview_default_elevation"
+                app:icon="@drawable/ic_time"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:iconTint="@color/colorAccent"
+                app:strokeWidth="0dp"/>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/iconServices"
+                app:layout_constraintTop_toTopOf="@id/btnHours"
+                app:layout_constraintBottom_toBottomOf="@id/btnHours"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnHours"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/services"
+                    android:id="@+id/textView_Services"
+                    android:visibility="invisible"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+                    android:layout_margin="5dp"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iconAddiction"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:alpha="0"
+                    android:src="@drawable/addiction"
+                    android:contentDescription="@string/addiction" />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iconAccommodation"
+                    android:src="@drawable/bed"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:alpha="0"
+                    android:contentDescription="@string/accommodation" />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iconHealth"
+                    android:src="@drawable/doctor"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+
+                    android:alpha="0"
+                    android:contentDescription="@string/health" />
+
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iconLegal"
+                    android:src="@drawable/gavel"
+                    android:contentDescription="@string/legal"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iconWomen"
+                    android:src="@drawable/girl"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:contentDescription="@string/women"
+                    android:alpha="0"
+                    />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iconEmployment"
+                    android:src="@drawable/job"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:contentDescription="@string/employment"
+                    android:alpha="0"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iconEducation"
+                    android:src="@drawable/education"
+                    android:layout_margin="5dp"
+                    android:alpha="0"
+                    android:contentDescription="@string/education"
+                    android:visibility="gone"
+                    />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iconFood"
+                    android:src="@drawable/grocery"
+                    android:layout_margin="5dp"
+                    android:alpha="0"
+                    android:contentDescription="@string/food"
+                    android:visibility="gone"
+                    />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iconCloth"
+                    android:src="@drawable/cloth"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:contentDescription="@string/clothing"
+                    android:alpha="0"
+                    />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iconHelpfulNumber"
+                    android:src="@drawable/phone_number"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:contentDescription="@string/phone"
+                    android:alpha="0"
+
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iconCounseling"
+                    android:src="@drawable/counseling"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:contentDescription="@string/counseling"
+                    android:alpha="0"
+                    />
+
+
+
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+</LinearLayout>

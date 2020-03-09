@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginEnd="4dp"
+    android:layout_marginStart="4dp"
+    app:cardElevation="2dp"
+    android:id="@+id/cardPlace"
+    android:layout_height="150dp"
+    android:minHeight="?listPreferredItemHeightLarge"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="?listPreferredItemHeightLarge">
+
+
+
+        <TextView
+            android:id="@+id/textView_placeName"
+            android:layout_width="0dp"
+            android:gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/black"
+            android:maxLength="50"
+            android:padding="5dp"
+            tools:text="Place Name" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services Available"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/iconServices"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/iconServices"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconAddiction"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:tint="@color/black"
+                android:src="@drawable/addiction"/>
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconAccommodation"
+                android:src="@drawable/bed"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:tint="@color/black"
+                />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconHealth"
+                android:src="@drawable/doctor"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:tint="@color/black"
+                />
+
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconLegal"
+                android:src="@drawable/gavel"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:tint="@color/black"
+                />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconWomen"
+                android:src="@drawable/girl"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:tint="@color/black"
+                />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconEmployment"
+                android:src="@drawable/job"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:tint="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconEducation"
+                android:src="@drawable/education"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:tint="@color/black"
+                />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconFood"
+                android:src="@drawable/grocery"
+                android:layout_margin="5dp"
+                android:tint="@color/black"
+                android:visibility="gone"
+                />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconCloth"
+                android:src="@drawable/cloth"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:tint="@color/black"
+                />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconHelpfulNumber"
+                android:src="@drawable/phone_number"
+                android:layout_margin="5dp"
+                android:tint="@color/black"
+                android:visibility="gone"
+
+                />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iconCounseling"
+                android:src="@drawable/counseling"
+                android:layout_margin="5dp"
+                android:visibility="gone"
+                android:tint="@color/black"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

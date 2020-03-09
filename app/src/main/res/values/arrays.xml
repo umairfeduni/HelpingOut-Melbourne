@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tags">
+        <item>accommodations</item>
+        <item>food</item>
+        <item>clothing</item>
+        <item>essentials</item>
+        <item>women</item>
+        <item>employment</item>
+        <item>education</item>
+        <item>legal</item>
+        <item>addiction</item>
+        <item>counselling</item>
+        <item>health</item>
+    </string-array>
+</resources>
