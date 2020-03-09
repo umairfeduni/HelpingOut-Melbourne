@@ -10,6 +10,7 @@ This is an unofficial app version of the "Helping Out Guide" available on City o
 </div>
 The Helping Out guide provides a comprehensive list of free and low-cost services available from organisations in the central city and surrounding suburbs.
 It includes a map and information about food, accommodation, health services, drug and alcohol services, services for women and legal advice from more than 70 organisations throughout the city.
+
 It help user to:
 - Bring this guide to a wider audience
 - Let people know about free or low-cost services available in Melbourne and surrounding suburbs to help them in the time of need
@@ -17,6 +18,7 @@ It help user to:
 - Allow users to search and filter places based on service type
 - Visualise location of places on the map
 
+Official Helping-Out Guide is available on City of Melbourne website @ https://www.melbourne.vic.gov.au/community/health-support-services/social-support/pages/helping-out.aspx
 
 ## Why I developed it?
 - Practice MVVM design pattern
@@ -36,7 +38,7 @@ Feel free to modify it or send me suggestions to improve it
 Credit: Logo icon from Flaticon.com by author Freepik
 
 
-MIT License
+## MIT License
 
 Copyright (c) 2020 Umair Khan
 
