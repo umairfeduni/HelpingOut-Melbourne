@@ -3,6 +3,9 @@
 
 This is an unofficial app version of the "Helping Out Guide" available on City of Melbourne website. This app version of the guide is not endorsed by City Of Melbourne.
 
+[![Android App](./google-play.png)](https://play.google.com/store/apps/details?id=com.umair.helpingout)
+
+
 <div>
 <img src="./screenshot_1.png" width="250">
 <img src="./screenshot_2.png" width="250">
